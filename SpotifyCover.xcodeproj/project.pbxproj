@@ -22,6 +22,7 @@
 		C7FEE3E02BE8CF5C008B4F60 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = C7FEE3DF2BE8CF5C008B4F60 /* SwiftfulRouting */; };
 		C7FEE3E42BE8D23D008B4F60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3E32BE8D23D008B4F60 /* HomeView.swift */; };
 		C7FEE3E62BE8D250008B4F60 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3E52BE8D250008B4F60 /* HomeViewModel.swift */; };
+		C7FEE3E92BE8D93F008B4F60 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C7FEE3D82BE8CA57008B4F60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7FEE3E32BE8D23D008B4F60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7FEE3E52BE8D250008B4F60 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FEE3E22BE8D1C5008B4F60 /* Home */,
+				C7FEE3E72BE8D8AC008B4F60 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +138,14 @@
 				C7FEE3E52BE8D250008B4F60 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C7FEE3E72BE8D8AC008B4F60 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				C7FEE3CE2BE8BE3D008B4F60 /* ImageLoaderView.swift in Sources */,
 				C7FEE3E62BE8D250008B4F60 /* HomeViewModel.swift in Sources */,
 				C7FEE3D22BE8C271008B4F60 /* DataBaseHelper.swift in Sources */,
+				C7FEE3E92BE8D93F008B4F60 /* CategoryView.swift in Sources */,
 				C7FEE3BE2BE8BD1B008B4F60 /* ContentView.swift in Sources */,
 				C7FEE3D92BE8CA57008B4F60 /* User.swift in Sources */,
 				C7FEE3BC2BE8BD1B008B4F60 /* SpotifyCoverApp.swift in Sources */,
