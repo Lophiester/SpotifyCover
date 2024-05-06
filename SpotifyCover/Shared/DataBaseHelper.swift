@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Fake mock data
+// MARK: - FAKE mockdata
 
 struct DataBaseHelper {
     
