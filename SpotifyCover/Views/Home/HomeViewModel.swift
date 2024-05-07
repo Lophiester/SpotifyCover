@@ -19,7 +19,7 @@ class HomeViewModel {
     func getdata() async {
         do {
             currentUser = try await  DataBaseHelper().getUsers().first
-            products =  try await DataBaseHelper().getProducts()
+            products =  try await Array(DataBaseHelper().getProducts().prefix(8))
         } catch  {
              print(error.localizedDescription)
         }
