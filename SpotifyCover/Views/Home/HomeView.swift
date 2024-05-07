@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftfulUI
 
 struct HomeView: View {
     
@@ -17,8 +18,26 @@ struct HomeView: View {
             
             ScrollView(.vertical){
                 
-                LazyVStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 1, pinnedViews: [.sectionHeaders], content: {
+                LazyVStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/,
+                           spacing: 1,
+                           pinnedViews: [.sectionHeaders],
+                           content: {
                     Section {
+                        VStack{
+                            NonLazyVGrid(
+                                columns: 2,
+                                alignment: .center,
+                                spacing: 10,
+                                items: viewModel.products) { product in
+                                    if let product {
+                                        RecentsView(
+                                            urlImage: product.firstImage,
+                                            title:product.title
+                                        )
+                                    }
+                                }
+                        }
+                        
                         ForEach(0..<20){ _ in
                             Rectangle()
                                 .fill(.red)

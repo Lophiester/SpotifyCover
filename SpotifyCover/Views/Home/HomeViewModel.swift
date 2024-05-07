@@ -12,12 +12,14 @@ import Observation
 class HomeViewModel {
     
     var currentUser: User? = nil
+    var products: [Product] = []
     var selectedCategory: Category? = nil
     
     
     func getdata() async {
         do {
             currentUser = try await  DataBaseHelper().getUsers().first
+            products =  try await DataBaseHelper().getProducts()
         } catch  {
              print(error.localizedDescription)
         }

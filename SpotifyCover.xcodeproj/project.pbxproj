@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C75B15032BEA12590094D946 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15022BEA12590094D946 /* RecentsView.swift */; };
+		C75B15052BEA19920094D946 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = C75B15042BEA19920094D946 /* SwiftfulUI */; };
 		C7FEE3BC2BE8BD1B008B4F60 /* SpotifyCoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */; };
 		C7FEE3BE2BE8BD1B008B4F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */; };
 		C7FEE3C02BE8BD1C008B4F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FEE3BF2BE8BD1C008B4F60 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75B15052BEA19920094D946 /* SwiftfulUI in Frameworks */,
 				C7FEE3DD2BE8CF35008B4F60 /* SwiftfulUI in Frameworks */,
 				C7FEE3E02BE8CF5C008B4F60 /* SwiftfulRouting in Frameworks */,
 				C7FEE3CB2BE8BD72008B4F60 /* SDWebImageSwiftUI in Frameworks */,
@@ -182,6 +184,7 @@
 				C7FEE3CA2BE8BD72008B4F60 /* SDWebImageSwiftUI */,
 				C7FEE3DC2BE8CF35008B4F60 /* SwiftfulUI */,
 				C7FEE3DF2BE8CF5C008B4F60 /* SwiftfulRouting */,
+				C75B15042BEA19920094D946 /* SwiftfulUI */,
 			);
 			productName = SpotifyCover;
 			productReference = C7FEE3B82BE8BD1B008B4F60 /* SpotifyCover.app */;
@@ -489,6 +492,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C75B15042BEA19920094D946 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7FEE3DB2BE8CF35008B4F60 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
 		C7FEE3CA2BE8BD72008B4F60 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7FEE3C92BE8BD72008B4F60 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
