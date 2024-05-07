@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CategoryView: View {
-    var title: String = "Title goes here"
+    var title: String = "All"
     var isSelected: Bool = false
     
     var body: some View {
         Text(title)
             .font(.callout)
-            .padding()
+            .frame(minWidth: 30)
+            .padding(.vertical, 5)
+            .padding(.horizontal, 10)
             .background(isSelected ? .spotifyGreen : .spotifyDarkGray)
             .foregroundStyle(isSelected ? .spotifyBlack : .spotifyWhite)
             .clipShape(.capsule)
