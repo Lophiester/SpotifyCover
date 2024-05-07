@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Observation
+import SwiftfulUI
 
 @Observable
 class HomeViewModel {
@@ -62,5 +63,20 @@ class HomeViewModel {
         .padding(.leading,8)
         .background(Color.spotifyBlack)
         
+    }
+    
+    var recentsSection: some View {
+        NonLazyVGrid(
+            columns: 2,
+            alignment: .center,
+            spacing: 10,
+            items: products) { product in
+                if let product {
+                    RecentsView(
+                        urlImage: product.firstImage,
+                        title:product.title
+                    )
+                }
+            }
     }
 }

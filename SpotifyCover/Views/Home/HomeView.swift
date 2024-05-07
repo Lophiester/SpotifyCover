@@ -24,19 +24,9 @@ struct HomeView: View {
                            content: {
                     Section {
                         VStack{
-                            NonLazyVGrid(
-                                columns: 2,
-                                alignment: .center,
-                                spacing: 10,
-                                items: viewModel.products) { product in
-                                    if let product {
-                                        RecentsView(
-                                            urlImage: product.firstImage,
-                                            title:product.title
-                                        )
-                                    }
-                                }
+                            viewModel.recentsSection
                         }
+                        .padding(.horizontal,16)
                         
                         ForEach(0..<20){ _ in
                             Rectangle()
