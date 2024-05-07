@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C75B15032BEA12590094D946 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15022BEA12590094D946 /* RecentsView.swift */; };
 		C75B15052BEA19920094D946 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = C75B15042BEA19920094D946 /* SwiftfulUI */; };
+		C75B15072BEA22510094D946 /* NewReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15062BEA22510094D946 /* NewReleaseView.swift */; };
 		C7FEE3BC2BE8BD1B008B4F60 /* SpotifyCoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */; };
 		C7FEE3BE2BE8BD1B008B4F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */; };
 		C7FEE3C02BE8BD1C008B4F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FEE3BF2BE8BD1C008B4F60 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		C75B15022BEA12590094D946 /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
+		C75B15062BEA22510094D946 /* NewReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseView.swift; sourceTree = "<group>"; };
 		C7FEE3B82BE8BD1B008B4F60 /* SpotifyCover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyCover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCoverApp.swift; sourceTree = "<group>"; };
 		C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */,
 				C75B15022BEA12590094D946 /* RecentsView.swift */,
+				C75B15062BEA22510094D946 /* NewReleaseView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				C7FEE3E42BE8D23D008B4F60 /* HomeView.swift in Sources */,
 				C75B15032BEA12590094D946 /* RecentsView.swift in Sources */,
 				C7FEE3D52BE8C5C8008B4F60 /* DataError.swift in Sources */,
+				C75B15072BEA22510094D946 /* NewReleaseView.swift in Sources */,
 				C7FEE3CE2BE8BE3D008B4F60 /* ImageLoaderView.swift in Sources */,
 				C7FEE3E62BE8D250008B4F60 /* HomeViewModel.swift in Sources */,
 				C7FEE3D22BE8C271008B4F60 /* DataBaseHelper.swift in Sources */,
