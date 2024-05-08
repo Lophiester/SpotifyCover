@@ -23,8 +23,12 @@ struct HomeView: View {
                            pinnedViews: [.sectionHeaders],
                            content: {
                     Section {
-                        VStack{
+                        VStack(spacing: 16){
                             viewModel.recentsSection
+                            if let firstProduct = viewModel.products.first{
+                                viewModel.newReleaseSection(product: firstProduct)
+                            }
+                      
                         }
                         .padding(.horizontal,16)
                         

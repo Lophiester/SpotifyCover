@@ -36,7 +36,7 @@ class HomeViewModel {
                     .background(.spotifyWhite)
                     .clipShape(Circle())
                     .onTapGesture {
-                        // TAP SOMETHING
+                        // MARK: TODO: Unimplemented Functions
                     }
             }
         }
@@ -78,5 +78,18 @@ class HomeViewModel {
                     )
                 }
             }
+    }
+    func newReleaseSection(product: Product) -> some View {
+        NewReleaseView(
+            urlImage: product.firstImage,
+            headline: product.brand,
+            subheadline: product.category,
+            title: product.title,
+            subtitle: product.description) {
+                // MARK: TODO: Unimplemented Functions
+            } onPlayPressed: {
+                // MARK: TODO: Unimplemented Functions
+            }
+
     }
 }
