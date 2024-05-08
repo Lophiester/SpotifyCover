@@ -13,15 +13,15 @@
 						<key>location-parameters</key>
 						<dict>
 							<key>EndingColumnNumber</key>
-							<string>25</string>
+							<string>0</string>
 							<key>EndingLineNumber</key>
-							<string>38</string>
+							<string>51</string>
 							<key>StartingColumnNumber</key>
-							<string>24</string>
+							<string>0</string>
 							<key>StartingLineNumber</key>
-							<string>38</string>
+							<string>50</string>
 							<key>Timestamp</key>
-							<string>736774460.493409</string>
+							<string>736847715.8610179</string>
 						</dict>
 						<key>rebasable-url</key>
 						<dict>
@@ -37,14 +37,15 @@
 					<key>text-context</key>
 					<dict>
 						<key>focused</key>
-						<string>/</string>
+						<string>// MARK: TODO: Unimplemented Functions
+</string>
 						<key>leading</key>
-						<string>                    .clipShape(Circle())
-                    .onTapGesture {
-                        </string>
+						<string>                        .clipShape(Circle())
+                        .onTapGesture {
+                            </string>
 						<key>trailing</key>
-						<string>/ MARK: TODO: Unimplemented Functions
-                    }
+						<string>                        }
+                }
             }
 </string>
 					</dict>
@@ -57,15 +58,15 @@
 						<key>location-parameters</key>
 						<dict>
 							<key>EndingColumnNumber</key>
-							<string>24</string>
+							<string>0</string>
 							<key>EndingLineNumber</key>
-							<string>90</string>
+							<string>103</string>
 							<key>StartingColumnNumber</key>
-							<string>23</string>
+							<string>0</string>
 							<key>StartingLineNumber</key>
-							<string>90</string>
+							<string>102</string>
 							<key>Timestamp</key>
-							<string>736774399.136564</string>
+							<string>736847715.860993</string>
 						</dict>
 						<key>rebasable-url</key>
 						<dict>
@@ -81,15 +82,16 @@
 					<key>text-context</key>
 					<dict>
 						<key>focused</key>
-						<string>:</string>
+						<string>                // MARK: TODO: Unimplemented Functions
+</string>
 						<key>leading</key>
 						<string>                // MARK: TODO: Unimplemented Functions
             } onPlayPressed: {
-                // MARK</string>
+</string>
 						<key>trailing</key>
-						<string> TODO: Unimplemented Functions
-            }
-
+						<string>            }
+        
+    }
 </string>
 					</dict>
 					<key>type</key>
@@ -101,15 +103,15 @@
 						<key>location-parameters</key>
 						<dict>
 							<key>EndingColumnNumber</key>
-							<string>29</string>
+							<string>0</string>
 							<key>EndingLineNumber</key>
-							<string>88</string>
+							<string>101</string>
 							<key>StartingColumnNumber</key>
-							<string>25</string>
+							<string>0</string>
 							<key>StartingLineNumber</key>
-							<string>88</string>
+							<string>100</string>
 							<key>Timestamp</key>
-							<string>736774415.72041</string>
+							<string>736847715.861027</string>
 						</dict>
 						<key>rebasable-url</key>
 						<dict>
@@ -125,15 +127,16 @@
 					<key>text-context</key>
 					<dict>
 						<key>focused</key>
-						<string>TODO</string>
+						<string>                // MARK: TODO: Unimplemented Functions
+</string>
 						<key>leading</key>
 						<string>            title: product.title,
             subtitle: product.description) {
-                // MARK: </string>
+</string>
 						<key>trailing</key>
-						<string>: Unimplemented Functions
-            } onPlayPressed: {
+						<string>            } onPlayPressed: {
                 // MARK: TODO: Unimplemented Functions
+            }
 </string>
 					</dict>
 					<key>type</key>

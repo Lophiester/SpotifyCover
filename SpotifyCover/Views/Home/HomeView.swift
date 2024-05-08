@@ -25,18 +25,22 @@ struct HomeView: View {
                     Section {
                         VStack(spacing: 16){
                             viewModel.recentsSection
+                                .padding(.horizontal,16)
                             if let firstProduct = viewModel.products.first{
                                 viewModel.newReleaseSection(product: firstProduct)
+                                    .padding(.horizontal,16)
                             }
+                            
+                            viewModel.listRows
+                        }
+                     
                       
-                        }
-                        .padding(.horizontal,16)
                         
-                        ForEach(0..<20){ _ in
-                            Rectangle()
-                                .fill(.red)
-                                .frame(width: 200, height: 200)
-                        }
+//                        ForEach(0..<20){ _ in
+//                            Rectangle()
+//                                .fill(.red)
+//                                .frame(width: 200, height: 200)
+//                        }
                     } header: {
                         viewModel.header
                     }
