@@ -87,7 +87,9 @@ class HomeViewModel {
                     RecentsView(
                         urlImage: product.firstImage,
                         title:product.title
-                    )
+                    ).asButton(.press) {
+                        // MARK: TODO: Unimplemented Functions
+                    }
                 }
             }
     }
@@ -123,6 +125,10 @@ class HomeViewModel {
                                 imageSize: 150,
                                 title: product.title
                             )
+                            .asButton(.press) {
+                                // MARK: TODO: Unimplemented Functions
+                            }
+                        }
                             
                         }
                     }
@@ -133,4 +139,4 @@ class HomeViewModel {
             
         }
     }
-}
+

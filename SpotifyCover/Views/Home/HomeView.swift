@@ -33,9 +33,7 @@ struct HomeView: View {
                             
                             viewModel.listRows
                         }
-                     
-                      
-                        
+
 //                        ForEach(0..<20){ _ in
 //                            Rectangle()
 //                                .fill(.red)

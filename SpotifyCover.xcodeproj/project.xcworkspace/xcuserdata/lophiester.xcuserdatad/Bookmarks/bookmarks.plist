@@ -13,6 +13,94 @@
 						<key>location-parameters</key>
 						<dict>
 							<key>EndingColumnNumber</key>
+							<string>39</string>
+							<key>EndingLineNumber</key>
+							<string>128</string>
+							<key>StartingColumnNumber</key>
+							<string>35</string>
+							<key>StartingLineNumber</key>
+							<string>128</string>
+							<key>Timestamp</key>
+							<string>736848499.484347</string>
+						</dict>
+						<key>rebasable-url</key>
+						<dict>
+							<key>base</key>
+							<string>workspace</string>
+							<key>payload</key>
+							<dict>
+								<key>relative-path</key>
+								<string>SpotifyCover/Views/Home/HomeViewModel.swift</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>text-context</key>
+					<dict>
+						<key>focused</key>
+						<string>MARK</string>
+						<key>leading</key>
+						<string>                            )
+                            .asButton(.press) {
+                                // </string>
+						<key>trailing</key>
+						<string>: TODO: Unimplemented Functions
+                            }
+                        }
+</string>
+					</dict>
+					<key>type</key>
+					<string>bookmark</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<dict>
+						<key>location-parameters</key>
+						<dict>
+							<key>EndingColumnNumber</key>
+							<string>37</string>
+							<key>EndingLineNumber</key>
+							<string>90</string>
+							<key>StartingColumnNumber</key>
+							<string>33</string>
+							<key>StartingLineNumber</key>
+							<string>90</string>
+							<key>Timestamp</key>
+							<string>736848423.460351</string>
+						</dict>
+						<key>rebasable-url</key>
+						<dict>
+							<key>base</key>
+							<string>workspace</string>
+							<key>payload</key>
+							<dict>
+								<key>relative-path</key>
+								<string>SpotifyCover/Views/Home/HomeViewModel.swift</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>text-context</key>
+					<dict>
+						<key>focused</key>
+						<string>TODO</string>
+						<key>leading</key>
+						<string>                        title:product.title
+                    ).asButton(.press) {
+                        // MARK: </string>
+						<key>trailing</key>
+						<string>: Unimplemented Functions
+                    }
+                }
+</string>
+					</dict>
+					<key>type</key>
+					<string>bookmark</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<dict>
+						<key>location-parameters</key>
+						<dict>
+							<key>EndingColumnNumber</key>
 							<string>0</string>
 							<key>EndingLineNumber</key>
 							<string>51</string>
@@ -60,13 +148,13 @@
 							<key>EndingColumnNumber</key>
 							<string>0</string>
 							<key>EndingLineNumber</key>
-							<string>103</string>
+							<string>105</string>
 							<key>StartingColumnNumber</key>
 							<string>0</string>
 							<key>StartingLineNumber</key>
-							<string>102</string>
+							<string>104</string>
 							<key>Timestamp</key>
-							<string>736847715.860993</string>
+							<string>736848381.998764</string>
 						</dict>
 						<key>rebasable-url</key>
 						<dict>
@@ -105,13 +193,13 @@
 							<key>EndingColumnNumber</key>
 							<string>0</string>
 							<key>EndingLineNumber</key>
-							<string>101</string>
+							<string>103</string>
 							<key>StartingColumnNumber</key>
 							<string>0</string>
 							<key>StartingLineNumber</key>
-							<string>100</string>
+							<string>102</string>
 							<key>Timestamp</key>
-							<string>736847715.861027</string>
+							<string>736848381.998785</string>
 						</dict>
 						<key>rebasable-url</key>
 						<dict>
