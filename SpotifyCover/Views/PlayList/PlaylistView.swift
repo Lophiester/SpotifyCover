@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct PlaylistView: View {
-    @State var viewModel = PlaylistViewModel()
+    
+    @State var product: Product = .mockProduct
+    @State var user: User = .mockUser
     
     var body: some View {
         ZStack{
             Color.spotifyBlack.ignoresSafeArea()
             ScrollView(.vertical) {
                 LazyVStack(
-                           spacing: 12,
-                           content: {
-                    PlaylistHeaderView(
-                        title: viewModel.product.title,
-                        subtitle: viewModel.product.brand,
-                        urlImage: viewModel.product.thumbnail
-                    )
-                    
-                })
+                    spacing: 12,
+                    content: {
+                        PlaylistHeaderView(
+                            title: product.title,
+                            subtitle: product.brand,
+                            urlImage: product.thumbnail
+                        )
+                        PlaylistDescriptionView(
+                            descriptionText: product.description,
+                            userName: user.firstName,
+                            subheadline: product.category)
+                        .padding(.horizontal,16)
+                        
+                        
+                    })
             }
             
         }

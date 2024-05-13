@@ -14,7 +14,6 @@
 		C75B15092BEB5CF60094D946 /* ImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15082BEB5CF60094D946 /* ImageRowView.swift */; };
 		C75B150C2BECD7940094D946 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B150B2BECD7940094D946 /* PlaylistView.swift */; };
 		C75B150E2BECD8100094D946 /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */; };
-		C75B15102BEF43650094D946 /* PlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B150F2BEF43650094D946 /* PlaylistViewModel.swift */; };
 		C7FEE3BC2BE8BD1B008B4F60 /* SpotifyCoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */; };
 		C7FEE3BE2BE8BD1B008B4F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */; };
 		C7FEE3C02BE8BD1C008B4F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FEE3BF2BE8BD1C008B4F60 /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 		C75B15082BEB5CF60094D946 /* ImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRowView.swift; sourceTree = "<group>"; };
 		C75B150B2BECD7940094D946 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 		C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
-		C75B150F2BEF43650094D946 /* PlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewModel.swift; sourceTree = "<group>"; };
 		C7FEE3B82BE8BD1B008B4F60 /* SpotifyCover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyCover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCoverApp.swift; sourceTree = "<group>"; };
 		C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,11 +72,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C72544392BF21AA00028F4EA /* HomeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */,
+				C75B15022BEA12590094D946 /* RecentsView.swift */,
+				C75B15062BEA22510094D946 /* NewReleaseView.swift */,
+			);
+			path = HomeComponents;
+			sourceTree = "<group>";
+		};
+		C725443A2BF21AE30028F4EA /* PlaylistComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */,
+				C72544372BF205970028F4EA /* PlaylistDescriptionView.swift */,
+			);
+			path = PlaylistComponents;
+			sourceTree = "<group>";
+		};
 		C75B150A2BECD7610094D946 /* PlayList */ = {
 			isa = PBXGroup;
 			children = (
 				C75B150B2BECD7940094D946 /* PlaylistView.swift */,
-				C75B150F2BEF43650094D946 /* PlaylistViewModel.swift */,
 			);
 			path = PlayList;
 			sourceTree = "<group>";
@@ -171,12 +187,9 @@
 		C7FEE3E72BE8D8AC008B4F60 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C7FEE3E82BE8D93F008B4F60 /* CategoryView.swift */,
-				C75B15022BEA12590094D946 /* RecentsView.swift */,
-				C75B15062BEA22510094D946 /* NewReleaseView.swift */,
 				C75B15082BEB5CF60094D946 /* ImageRowView.swift */,
-				C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */,
-				C72544372BF205970028F4EA /* PlaylistDescriptionView.swift */,
+				C72544392BF21AA00028F4EA /* HomeComponents */,
+				C725443A2BF21AE30028F4EA /* PlaylistComponents */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -271,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75B15102BEF43650094D946 /* PlaylistViewModel.swift in Sources */,
 				C7FEE3E42BE8D23D008B4F60 /* HomeView.swift in Sources */,
 				C75B15032BEA12590094D946 /* RecentsView.swift in Sources */,
 				C7FEE3D52BE8C5C8008B4F60 /* DataError.swift in Sources */,

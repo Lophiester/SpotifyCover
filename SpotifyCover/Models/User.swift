@@ -14,8 +14,14 @@ struct UserArray: Codable {
 
 struct User: Codable, Identifiable {
     let id: Int
-    let firstName, lastName, maidenName: String
+    let firstName, lastName: String
     let age: Int
     let email, phone, username, password: String
     let image: String
+    
+    
+    
+  static  var mockUser: User {
+        User(id: 123, firstName: "MOCK NAME", lastName: "MOCK lastName", age: 70, email: "mock@gmail.com", phone: "", username: "", password: "", image: Constants.randomImage)
+    }
 }
