@@ -15,9 +15,6 @@ struct ProductArray: Codable {
 struct Product: Codable, Identifiable {
     let id: Int
     let title, description: String
-    let price: Int
-    let discountPercentage, rating: Double
-    let stock: Int
     let brand, category: String
     let thumbnail: String
     let images: [String]
@@ -26,6 +23,20 @@ struct Product: Codable, Identifiable {
     var firstImage: String {
         images.first ?? Constants.randomImage
     }
+    
+    static var mockProduct: Product {
+        
+        Product(
+            id: 123,
+            title: "MOCK Title",
+            description: "some MOCK description goes here",
+            brand: "MOCK Brand",
+            category: "MOCK Eletronincs",
+            thumbnail:  Constants.randomImage,
+            images:[ Constants.randomImage, Constants.randomImage, Constants.randomImage]
+        )
+        
+    }
 }
 
 struct ProductRow: Identifiable {
@@ -33,4 +44,5 @@ struct ProductRow: Identifiable {
     let title: String
     let products:[Product]
 }
+
 

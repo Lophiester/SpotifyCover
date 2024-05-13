@@ -125,12 +125,12 @@
 					<key>text-context</key>
 					<dict>
 						<key>focused</key>
-						<string>// MARK: TODO: Unimplemented Functions
+						<string>                            // MARK: TODO: Unimplemented Functions
 </string>
 						<key>leading</key>
 						<string>                        .clipShape(Circle())
                         .onTapGesture {
-                            </string>
+</string>
 						<key>trailing</key>
 						<string>                        }
                 }
