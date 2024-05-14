@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C72544382BF205970028F4EA /* PlaylistDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72544372BF205970028F4EA /* PlaylistDescriptionView.swift */; };
+		C725443C2BF349390028F4EA /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725443B2BF349390028F4EA /* SongRowView.swift */; };
 		C75B15032BEA12590094D946 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15022BEA12590094D946 /* RecentsView.swift */; };
 		C75B15052BEA19920094D946 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = C75B15042BEA19920094D946 /* SwiftfulUI */; };
 		C75B15072BEA22510094D946 /* NewReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15062BEA22510094D946 /* NewReleaseView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		C72544372BF205970028F4EA /* PlaylistDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDescriptionView.swift; sourceTree = "<group>"; };
+		C725443B2BF349390028F4EA /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
 		C75B15022BEA12590094D946 /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
 		C75B15062BEA22510094D946 /* NewReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseView.swift; sourceTree = "<group>"; };
 		C75B15082BEB5CF60094D946 /* ImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRowView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */,
 				C72544372BF205970028F4EA /* PlaylistDescriptionView.swift */,
+				C725443B2BF349390028F4EA /* SongRowView.swift */,
 			);
 			path = PlaylistComponents;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				C7FEE3D52BE8C5C8008B4F60 /* DataError.swift in Sources */,
 				C75B150E2BECD8100094D946 /* PlaylistHeaderView.swift in Sources */,
 				C75B15072BEA22510094D946 /* NewReleaseView.swift in Sources */,
+				C725443C2BF349390028F4EA /* SongRowView.swift in Sources */,
 				C7FEE3CE2BE8BE3D008B4F60 /* ImageLoaderView.swift in Sources */,
 				C7FEE3E62BE8D250008B4F60 /* HomeViewModel.swift in Sources */,
 				C7FEE3D22BE8C271008B4F60 /* DataBaseHelper.swift in Sources */,
