@@ -15,6 +15,8 @@
 		C75B15092BEB5CF60094D946 /* ImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B15082BEB5CF60094D946 /* ImageRowView.swift */; };
 		C75B150C2BECD7940094D946 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B150B2BECD7940094D946 /* PlaylistView.swift */; };
 		C75B150E2BECD8100094D946 /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */; };
+		C791AF922BF4A91900B454AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C791AF912BF4A91900B454AB /* Launch Screen.storyboard */; };
+		C791AF952BF4AC5000B454AB /* spotifycoverIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C791AF942BF4AC5000B454AB /* spotifycoverIcon.jpg */; };
 		C7FEE3BC2BE8BD1B008B4F60 /* SpotifyCoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */; };
 		C7FEE3BE2BE8BD1B008B4F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */; };
 		C7FEE3C02BE8BD1C008B4F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FEE3BF2BE8BD1C008B4F60 /* Assets.xcassets */; };
@@ -42,6 +44,9 @@
 		C75B15082BEB5CF60094D946 /* ImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRowView.swift; sourceTree = "<group>"; };
 		C75B150B2BECD7940094D946 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 		C75B150D2BECD8100094D946 /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
+		C791AF912BF4A91900B454AB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C791AF932BF4A99500B454AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C791AF942BF4AC5000B454AB /* spotifycoverIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotifycoverIcon.jpg; sourceTree = "<group>"; };
 		C7FEE3B82BE8BD1B008B4F60 /* SpotifyCover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyCover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FEE3BB2BE8BD1B008B4F60 /* SpotifyCoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCoverApp.swift; sourceTree = "<group>"; };
 		C7FEE3BD2BE8BD1B008B4F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,12 +126,15 @@
 		C7FEE3BA2BE8BD1B008B4F60 /* SpotifyCover */ = {
 			isa = PBXGroup;
 			children = (
+				C791AF932BF4A99500B454AB /* Info.plist */,
 				C7FEE3DA2BE8CAEE008B4F60 /* Root */,
 				C7FEE3E12BE8D1AF008B4F60 /* Views */,
 				C7FEE3D32BE8C5B3008B4F60 /* Models */,
 				C7FEE3CC2BE8BE1E008B4F60 /* Shared */,
 				C7FEE3BF2BE8BD1C008B4F60 /* Assets.xcassets */,
+				C791AF942BF4AC5000B454AB /* spotifycoverIcon.jpg */,
 				C7FEE3C12BE8BD1C008B4F60 /* Preview Content */,
+				C791AF912BF4A91900B454AB /* Launch Screen.storyboard */,
 			);
 			path = SpotifyCover;
 			sourceTree = "<group>";
@@ -275,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C791AF922BF4A91900B454AB /* Launch Screen.storyboard in Resources */,
+				C791AF952BF4AC5000B454AB /* spotifycoverIcon.jpg in Resources */,
 				C7FEE3C32BE8BD1C008B4F60 /* Preview Assets.xcassets in Resources */,
 				C7FEE3C02BE8BD1C008B4F60 /* Assets.xcassets in Resources */,
 			);
@@ -442,9 +452,10 @@
 				DEVELOPMENT_TEAM = 2A8H49QXG6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotifyCover/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,9 +482,10 @@
 				DEVELOPMENT_TEAM = 2A8H49QXG6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotifyCover/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
