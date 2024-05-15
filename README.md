@@ -24,7 +24,8 @@ https://github.com/Lophiester/SpotifyCover.git
 2. Open the project in Xcode.
 3. Run the project on your simulator or device.
 
-
+## LAYOUT
+-- https://github.com/Lophiester/SpotifyCover/tree/main/assets
 
 
 ## License
