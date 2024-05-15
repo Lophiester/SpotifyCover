@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-import Observation
 import SwiftfulUI
+import SwiftfulRouting
+import Observation
 
 @Observable
 class HomeViewModel {
@@ -19,8 +20,21 @@ class HomeViewModel {
     var products: [Product] = []
     var productsRows:[ProductRow] = []
     
+    let router: AnyRouter
+    
+    init( router: AnyRouter) {
+        self.router = router
+    }
+    
+    private func goToPlaylistView(product: Product){
+        guard let currentUser else {return}
+        self.router.showScreen(.push) { _ in
+            PlaylistView(product: product, user: currentUser)
+        }
+    }
     
     func getdata() async {
+        guard products.isEmpty else {return}
         do {
             currentUser = try await  DataBaseHelper().getUsers().first
             products =  try await Array(DataBaseHelper().getProducts().prefix(8))
@@ -88,7 +102,7 @@ class HomeViewModel {
                         urlImage: product.firstImage,
                         title:product.title
                     ).asButton(.press) {
-                        // MARK: TODO: Unimplemented Functions
+                        self.goToPlaylistView(product: product)
                     }
                 }
             }
@@ -102,7 +116,7 @@ class HomeViewModel {
             subtitle: product.description) {
                 // MARK: TODO: Unimplemented Functions
             } onPlayPressed: {
-                // MARK: TODO: Unimplemented Functions
+                self.goToPlaylistView(product: product)
             }
         
     }
@@ -126,7 +140,7 @@ class HomeViewModel {
                                 title: product.title
                             )
                             .asButton(.press) {
-                                // MARK: TODO: Unimplemented Functions
+                                self.goToPlaylistView(product: product)
                             }
                         }
                             

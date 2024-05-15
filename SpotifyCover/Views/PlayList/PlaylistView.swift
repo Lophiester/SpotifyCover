@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftfulUI
+import SwiftfulRouting
 
 struct PlaylistView: View {
     
@@ -15,6 +16,9 @@ struct PlaylistView: View {
     @State var products:[Product] = []
     @State var isShowHeader: Bool = false
     @State var offset: CGFloat = 0
+    
+    @Environment (\.router) var router
+    
     
     var body: some View {
         ZStack{
@@ -47,7 +51,10 @@ struct PlaylistView: View {
                                 urlImage: product.firstImage,
                                 imageSize: 60,
                                 title: product.title,
-                                subtitle: product.brand
+                                subtitle: product.brand,
+                                onRowPressed: {
+                                    goToPlaylistView(product: product)
+                                }
                             )
                             .padding(.horizontal,16)
                         }
@@ -71,7 +78,7 @@ struct PlaylistView: View {
                     .padding(.leading,16)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                     .onTapGesture {
-                        
+                        router.dismissScreenStack()
                     }
                 
             }
@@ -83,7 +90,13 @@ struct PlaylistView: View {
                 await  getdata()
             }
         }
-        
+        .toolbar(.hidden)
+    }
+    
+    private func goToPlaylistView(product: Product){
+        router.showScreen(.push) { _ in
+            PlaylistView(product: product, user: user)
+        }
     }
     
     private  func getdata() async {
@@ -98,5 +111,8 @@ struct PlaylistView: View {
 }
 
 #Preview {
-    PlaylistView()
+    
+    RouterView { _ in
+       PlaylistView()
+    }
 }

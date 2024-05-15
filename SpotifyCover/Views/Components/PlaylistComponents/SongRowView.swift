@@ -51,6 +51,7 @@ struct SongRowView: View {
                       onEllipsisPreesed?()
                     }
             }
+        .background(.black.opacity(0.001))
         .onTapGesture {
             onRowPressed?()
         }

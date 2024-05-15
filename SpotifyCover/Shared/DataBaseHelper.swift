@@ -25,6 +25,7 @@ struct DataBaseHelper {
         }
         
     }
+        
     
     func getUsers () async throws ->[User] {
         guard let url = URL(string: "https://dummyjson.com/users") else {

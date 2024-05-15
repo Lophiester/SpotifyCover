@@ -7,10 +7,13 @@
 
 import SwiftUI
 import SwiftfulUI
+import SwiftfulRouting
 
 struct HomeView: View {
     
-    @State var viewModel = HomeViewModel()
+    @State var viewModel : HomeViewModel
+    
+ 
     
     var body: some View {
         ZStack{
@@ -59,9 +62,9 @@ struct HomeView: View {
 }
 
 #Preview {
+    RouterView{ router in
+    HomeView(viewModel: HomeViewModel(router: router))
     
-    HomeView()
-    
-    
+}
     
 }
